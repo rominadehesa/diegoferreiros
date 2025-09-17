@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+
+@font-face {
+  font-family: 'albula-bold';
+  src: url('/src/assets/albula-narrow-pro-trial/AlbulaNarrowPro-Trial-Bold.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'albula-ExtraBold';
+  src: url('/src/assets/albula-narrow-pro-trial/AlbulaNarrowPro-Trial-ExtraBold.otf') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'albula-medium';
+  src: url('/src/assets/albula-narrow-pro-trial/AlbulaNarrowPro-Trial-Medium.otf') format('woff2');
+}
+
+
+:root {
+  --blue-color: #00293F;
+  --red-color: #D22610;
+  --light-color: #F4F4F4;
+  --dark-color: #151F26;
+}
+.padding-hero {
+  padding: 20vh 10vw;
+}
+.padding-container {
+  padding: 15vh 15vw;
+}
+
+.container-blue {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.container-light {
+  background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+section main p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+#btnMainRed {
+  background-color: var(--red-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 40px;
+  text-decoration: none;
+  transition: padding 0.3s ease;
+  font-weight: 400;
+}
+
+#btnMainRed:hover {
+  padding-right: 45px;
+  font-weight: 500;
+}
+
+#hack {
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  #btnMainRed {
+    padding: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .padding-hero {
+    padding: 10vh 10vw;
+  }
+  #hack > path {
+    fill: #F4F4F4;
+  }
+  .padding-container {
+    padding: 8vh 10vw;
+  }
+}
