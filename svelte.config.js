@@ -1,11 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig({
   plugins: [svelte()],
   build: {
-    outDir: 'public', // carpeta que Cloudflare Pages usará como output
-    emptyOutDir: true
+    outDir: 'dist', // aquí se generará la carpeta de build
   },
-  base: '/' // importante para rutas relativas
 });
