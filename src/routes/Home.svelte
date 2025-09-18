@@ -17,10 +17,10 @@
     ]
 </script>
 
-<HeroMain></HeroMain>
+<HeroMain title="MONTAJES INDUSTRIALES"></HeroMain>
 
 <SectionMain 
-    title="Más de 30 años construyendo confianza y solidez"
+    titleMain="Más de 30 años construyendo confianza y solidez"
     text={texts}
     condition=true url="/" textBtn="Explora nuestros proyectos &rarr;"> 
 </SectionMain>

@@ -24,6 +24,11 @@ html, body {
   src: url('/src/assets/albula-narrow-pro-trial/AlbulaNarrowPro-Trial-Medium.otf') format('woff2');
 }
 
+@font-face {
+  font-family: 'albula-thin';
+  src: url('/src/assets/albula-narrow-pro-trial/AlbulaNarrowPro-Trial-Thin.otf') format('woff2');
+}
+
 
 :root {
   --blue-color: #00293F;
@@ -55,8 +60,8 @@ section main p {
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 #btnMainRed {

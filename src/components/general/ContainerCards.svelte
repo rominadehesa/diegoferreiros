@@ -39,7 +39,7 @@
     }
     .container-cards article header {
         height: 30vh;
-        background-image: url('../../../public/a.webp');
+        background-image: url('../../../public/foto.jpg');
         background-size: cover;
         border-radius: 12px 12px 0 0;
     }
