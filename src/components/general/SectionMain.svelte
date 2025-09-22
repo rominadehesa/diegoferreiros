@@ -1,27 +1,44 @@
 <script>
+    import { onMount } from "svelte";
+
     export let titleMain;
     export let title;
     export let text;
     export let condition;
     export let url;
     export let textBtn;
+
+    let visible = false;
+    let element;
+
+    onMount(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    visible = true;
+                    // Si querés que solo se anime la primera vez:
+                    observer.unobserve(element);
+                }
+            },
+            { threshold: 0.2 } // 20% visible
+        );
+        observer.observe(element);
+    });
 </script>
 
-<section class="container-blue padding-container">
-        <main>
-            {#if titleMain}
-                <h1 class="titleMain">{titleMain}</h1>
-            {:else}
-                <h1>{title}</h1>
-            {/if}
-            {#each text as item}
-                <p>{item.text}</p>
-            {/each}
-            <br>
-            {#if condition == true}
-                <button id="btnMainRed">{textBtn}</button>
-            {/if}
-        </main>
+<section class="container-blue padding-container" bind:this={element}>
+    <main class:show={visible}>
+        {#if titleMain}
+            <h1 class="titleMain">{titleMain}</h1>
+        {:else}
+            <h1>{title}</h1>
+        {/if}
+        <slot></slot>
+        <br>
+        {#if condition == true}
+            <button id="btnMainRed">{textBtn}</button>
+        {/if}
+    </main>
 </section>
 
 <style>
@@ -30,49 +47,32 @@
         justify-content: center;
         align-items: center;
     }
-    section main {
+
+    main {
         text-align: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease;
+    }
+    main.show {
+        opacity: 1;
+        transform: translateY(0);
     }
 
-    h1 {
-        font-size: 34px;
-        font-weight: 800;
-    }
-
-    .titleMain {
-        display: inline-block;
-        overflow: hidden;          /* oculta lo que aún no aparece */
-        white-space: nowrap;       /* evita saltos de línea */
-        animation: typing 2.5s normal;
-    }
-    
-
-    /* Animación de escritura */
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-    }
-
+    /* Mobile */
     @media (max-width: 768px) {
-        section main {
-            width: 100%;
+        main {
             text-align: start;
         }
-        
         h1 {
             font-size: 24px;
-            font-weight: 800;
-            white-space: wrap;
-            animation: none;
         }
-        section p {
-            font-size: 16px;
-            line-height: 18px;
-            font-weight: 300;
-        }
-        .titleMain {
-            animation: none;
-            white-space: normal;
+    }
+
+    /* Desktop */
+    @media (min-width: 769px) {
+        h1 {
+            font-size: 34px;
         }
     }
 </style>

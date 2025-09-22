@@ -85,6 +85,10 @@ section main p {
   width: 40px;
 }
 
+p span {
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   #btnMainRed {
     padding: auto;
