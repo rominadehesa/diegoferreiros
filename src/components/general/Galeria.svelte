@@ -49,8 +49,8 @@
     @media (max-width: 768px) {
         
         section main article {
-            width: 50vw;
-            height: 15vh;
+            width: 60vw;
+            height: 30vh;
             background-image: url('../../../public/hero.png');
             background-size: cover;
         }

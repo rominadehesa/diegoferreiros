@@ -26,7 +26,7 @@
     }
     @media (max-width: 768px) {
         h1 {
-            font-size: 24px;
+            font-size: 30px;
             font-weight: 800;
             text-align: start;
         }

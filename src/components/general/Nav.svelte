@@ -21,6 +21,24 @@
       navbar.style.backgroundColor = "transparent";
     }
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("menu-list");
+    const btnMenu = document.getElementById("btnMenuHamb");
+
+    // Cerrar al hacer clic en un link
+    const links = document.querySelectorAll("#menu-list a");
+    links.forEach(link => {
+      link.addEventListener("click", () => toggleMenu(true));
+    });
+
+    // Cerrar al hacer clic fuera del menú
+    document.addEventListener("click", (e) => {
+      if (menuOpen && !menu.contains(e.target) && !btnMenu.contains(e.target)) {
+        toggleMenu(true);
+      }
+    });
+  });
 </script>
 
 
