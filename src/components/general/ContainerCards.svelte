@@ -64,8 +64,8 @@
     }
 
     #text-card {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 18px;
         padding: 0;
         margin: 0;
     }
