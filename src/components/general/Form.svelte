@@ -69,5 +69,8 @@
         section div, section form {
             width: 100%;
         }
+        h1 {
+            font-size: 28px;
+        }
     }
 </style>
