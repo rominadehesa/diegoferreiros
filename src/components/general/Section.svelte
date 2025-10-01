@@ -3,38 +3,37 @@
 </script>
 
 <section class="padding-container container-light">
+    <div>
+        <h1>Nuestros principales servicios</h1>
+        <p>Soluciones integrales en montajes industriales, adaptadas a las necesidades de cada proyecto. <br> Desde grandes desarrollos hasta obras específicas, acompañamos a empresas e industrias en cada etapa.</p>
+    </div>
     <main>
-        <h1>Lo que nos distingue</h1>
-        <p>Nuestra mayor fortaleza no está solo en la experiencia técnica, sino en la forma de relacionarnos. Construimos confianza a través de la responsabilidad en cada proyecto, y cultivamos la cercanía con el cliente, escuchando sus necesidades y ofreciendo soluciones a medida.</p>
         <ContainerCards></ContainerCards>
     </main>
 </section>
-
 <style>
     section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        justify-content: space-between;
+        align-items: start;
+        gap: 100px;
     }
-    section main {
+    section div {
+        width: 100%;
+    }
+    section main, section div {
         text-align: center;
     }
     h1 {
-        font-size: 34px;
-        font-weight: 800;
-        color: var(--blue-color);
+        font-weight: 900;
+        color: var(--red-color);
     }
     @media (max-width: 768px) {
-        h1 {
-            font-size: 30px;
-            font-weight: 800;
+        section main, section div {
             text-align: start;
         }
-        section p {
-            font-size: 16px;
-            line-height: 18px;
-            font-weight: 300;
-            text-align: start;
+        h1{
+            font-size: 30px;
         }
     }
 </style>

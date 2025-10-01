@@ -3,11 +3,14 @@
     import Home from './routes/Home.svelte';
     import Nav from './components/general/Nav.svelte';
     import Footer from './components/general/Footer.svelte';
+    // @ts-ignore
     import Servicios from './routes/Servicios.svelte';
+    import Contacto from './routes/Contacto.svelte';
     
     const routes = {
       '/': Home,
-      '/servicios': Servicios
+      '/servicios': Servicios,
+      '/contacto': Contacto
     }
   </script>
 

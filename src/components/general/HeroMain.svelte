@@ -20,7 +20,6 @@
 
 <style>
     header {
-        background: linear-gradient(rgba(21, 31, 38, 1.5),rgba(21, 31, 38, 0.5),rgba(21, 31, 38, 0.2),rgba(21, 31, 38, 0.1),rgba(21, 31, 38, 0)),url('../../public/a.webp');
         background-size: cover;
         background-position: center center;
         display: flex;

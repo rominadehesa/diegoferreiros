@@ -39,8 +39,8 @@
 
     section main article {
         flex: 0 0 auto; /* evita que los items se achiquen */
-        background-image: url('../../../public/hero.png');
-        background-position: cover;
+        background-image: url('../../../public/retggsdfsd.jpeg');
+        background-size: cover;
         width: 30vw;
         height: 50vh;
         border-radius: 10px;
@@ -51,7 +51,7 @@
         section main article {
             width: 60vw;
             height: 30vh;
-            background-image: url('../../../public/hero.png');
+            background-image: url('../../../public/retggsdfsd.jpeg');
             background-size: cover;
         }
     }

@@ -34,13 +34,13 @@ html, body {
   --blue-color: #00293F;
   --red-color: #D22610;
   --light-color: #F4F4F4;
-  --dark-color: #151F26;
+  --dark-color: #212121;
 }
 .padding-hero {
   padding: 20vh 10vw;
 }
 .padding-container {
-  padding: 15vh 15vw;
+  padding: 20vh 15vw;
 }
 
 .container-blue {
@@ -56,12 +56,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-section main p {
+section main p, section div p {
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
 }
 
 #btnMainRed {

@@ -9,6 +9,8 @@
     import Galeria from '../components/general/Galeria.svelte';
     import Form from '../components/general/Form.svelte';
 
+    import montajes from "/public/foto.jpg";
+
     const texts = [
         {
             text: "Soluciones integrales en montajes industriales, adaptadas a las necesidades de cada proyecto. Desde grandes desarrollos hasta obras específicas, acompañamos a empresas e industrias en cada etapa."
@@ -16,84 +18,164 @@
     ];
 </script>
 
-<HeroMain title="NUESTROS SERVICIOS"/>
+<HeroMain/>
 
-<SectionDark title="Nuestros principales servicios" text={texts}></SectionDark>
-
-<SectionImage subtitle="Cuidamos lo que ya construiste" title="Mantenimiento de obras" 
-    text="Ofrecemos servicios de mantenimiento preventivo y correctivo para obras propias o de terceros, con el objetivo de maximizar la vida útil de tus instalaciones y evitar paradas innecesarias en la producción. Nuestro equipo actúa con rapidez y eficacia, atendiendo desde reparaciones puntuales hasta planes de mantenimiento programado. Confiar en nosotros significa asegurar continuidad operativa y tranquilidad, sabiendo que tus estructuras están en manos de especialistas comprometidos con la seguridad y la productividad de tu empresa." 
-    subtext="Perfecto para empresas e industrias que valoran la continuidad de sus operaciones.">
-</SectionImage>
-
-<section class="padding-container container-service-main">
-    <main>
-        <h3>Soluciones integrales en estructuras</h3>
-        <h1>Montajes Industriales</h1>
-        <p>Nos especializamos en el montaje integral de galpones, silos, norias y estructuras metálicas de distintas dimensiones. Acompañamos cada proyecto desde la planificación hasta la instalación final, con un enfoque en seguridad, eficiencia y cumplimiento de plazos. Nuestra experiencia nos permite adaptarnos tanto a grandes desarrollos industriales como a proyectos específicos, garantizando resultados sólidos y duraderos. Porque sabemos que cada obra es una inversión, trabajamos para que sea también una garantía de calidad.</p>
-        <p>Pensado para proyectos que buscan instalaciones sólidas y duraderas.</p>
-    </main>
+<section class="padding-container container-blue service">
+    <img src="{montajes}" alt="Industrial workers">
+    <div>
+        <h1>Montajes industriales <br> a tu medida</h1>
+        <p>Nos dedicamos al montaje de galpones, silos, norias y estructuras metálicas. Acompañamos cada proyecto con seguridad, eficiencia y cumplimiento de plazos, garantizando resultados sólidos y duraderos.</p>
+        <main>
+            <article>
+                <h4>Experiencia comprobada</h4>
+                <p>Años de trayectoria en montajes industriales.</p>
+            </article>
+            <article>
+                <h4>Montaje especializado</h4>
+                <p>Técnicos y equipos listos para cualquier escala.</p>
+            </article>
+            <article>
+                <h4>Compromiso de calidad</h4>
+                <p>Resultados seguros y duraderos en cada obra.</p>
+            </article>
+        </main>
+    </div>
 </section>
 
-<SectionImage subtitle="Cuidamos lo que ya construiste" title="Mantenimiento de obras" 
-    text="Ofrecemos servicios de mantenimiento preventivo y correctivo para obras propias o de terceros, con el objetivo de maximizar la vida útil de tus instalaciones y evitar paradas innecesarias en la producción. Nuestro equipo actúa con rapidez y eficacia, atendiendo desde reparaciones puntuales hasta planes de mantenimiento programado. Confiar en nosotros significa asegurar continuidad operativa y tranquilidad, sabiendo que tus estructuras están en manos de especialistas comprometidos con la seguridad y la productividad de tu empresa." 
-    subtext="Perfecto para empresas e industrias que valoran la continuidad de sus operaciones.">
-</SectionImage>
+<section class="padding-container service container-light">
+    <div>
+        <h1>Mantenimiento de obras</h1>
+        <p>Ofrecemos mantenimiento preventivo y correctivo para obras propias o de terceros. Actuamos con rapidez para prolongar la vida útil de tus instalaciones y asegurar continuidad operativa.</p>
+        <main>
+            <article>
+                <h4>Mayor vida útil</h4>
+                <p>Tus estructuras en óptimas condiciones por más tiempo.</p>
+            </article>
+            <article>
+                <h4>Intervención ágil</h4>
+                <p>Soluciones rápidas ante cualquier imprevisto.</p>
+            </article>
+            <article>
+                <h4>Seguridad garantizada</h4>
+                <p>Cuidamos cada detalle para proteger tu inversión.</p>
+            </article>
+        </main>
+    </div>
+     <img src="{montajes}" alt="Industrial workers">
+</section>
 
-<Galeria></Galeria>
+<section class="padding-container container-img service">
+   <div>
+        <h1>Soporte y servicio <br> de grúa</h1>
+        <p>Brindamos servicio de grúa para montaje, traslado y elevación de estructuras. Operamos con seguridad y eficiencia, garantizando maniobras confiables en cada proyecto.</p>
+        <main>
+            <article>
+                <h4>Operadores especializados</h4>
+                <p>Personal capacitado para maniobras seguras y precisas.</p>
+            </article>
+            <article>
+                <h4>Equipos versátiles</h4>
+                <p>Grúas adaptadas a diferentes tipos de cargas y alturas.</p>
+            </article>
+            <article>
+                <h4>Soporte integral</h4>
+                <p>Asistencia en montaje, traslado y colocación de estructuras.</p>
+            </article>
+        </main>
+    </div>
+    <img src="" alt="">
+</section>
 
 <Form></Form>
 
 <style>
-    .container-service-main {
+    .service {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        background-color: var(--blue-color);
-        color: var(--light-color);
-        text-align: center;
     }
-
-    h3 {
-        font-size: 16px;
-        font-family: 'albula-bold';
-        text-transform: uppercase;
-        margin-bottom: 2vh;
-        color: var(--light-color);
+    .service h1 {
+        font-weight: 800;
+        font-size: 34px;
     }
-
-    h1 {
-        font-size: 40px;
+    .container-light h1 {
+        color: var(--blue-color);
+    }
+    .service > img {
+        width: 45%;
+        border-radius: 12px;
+    }
+    .service > div {
+        width: 50%;
+    }
+    .service div main {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 1vh;
+    }
+    .service div main article {
+        width: 25%;
+        height: 15vh;
+        padding: 2vh;
+        border-radius: 12px;
+        background-color: #003450;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .service div main h4 {
+        font-size: 14px;
         font-weight: 800;
         color: var(--red-color);
     }
-
-    p {
-        color: var(--light-color);
+    .service div main p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
-
+    .container-light div main article {
+        background-color: #fff;
+    }
+    .container-img {
+        background-image: url('../../public/grua.png');
+        background-size: cover;
+        height: 70vh;
+        align-items: end;
+        color: #fff;
+    }
+    .container-img div main {
+        flex-wrap: nowrap;
+    }
+    .container-img > div {
+        width: 70%;
+    }
+    .container-img div main article {
+        width: 50%;
+    }
     @media (max-width: 768px) {
-        .container-service-main {
+        .service {
             display: block;
-            text-align: start;
         }
-        section main {
+        .service > img {
             width: 100%;
-            text-align: start;
+            border-radius: 12px;
+            margin-bottom: 5vh;
         }
-        
-        h1 {
-            font-size: 24px;
-            font-weight: 800;
+        .service > div {
+            width: 100%;
+            margin-bottom: 5vh;
         }
-        section p {
-            font-size: 16px;
-            line-height: 18px;
-            font-weight: 300;
+        .service div main {
+            display: block;
         }
-
-        h3 {
-            font-size: 14px;
-            font-family: 'albula-medium';
+        .service div main article {
+            width: 90%;
+            height: auto;
+            margin-bottom: 2vh;
+        }
+        .container-img {
+            height: auto;
         }
     }
 </style>
