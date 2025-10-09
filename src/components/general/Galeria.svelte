@@ -1,17 +1,15 @@
 <script>
-
+    export let images;
 </script>
 
 <section class="padding-container">
     <h1>Galeria</h1>
     <br>
     <main>
-        <article></article>
-        <article></article>
-        <article></article>
-         <article></article>
-        <article></article>
-        <article></article>
+        {#each images as item}
+             <!-- content here -->
+             <article style="background-image: url({item.src});"></article>
+        {/each}
     </main>
 </section>
 

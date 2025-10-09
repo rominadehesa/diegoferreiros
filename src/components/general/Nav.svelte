@@ -1,6 +1,6 @@
 <script>
 // @ts-nocheck
-
+const img = '/logo2.png';
 let menuOpen = false;
 
 // Toggle del menú mobile
@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 
   <!-- Botón hamburguesa -->
+  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div class="menu-mobile" id="btnMenuHamb" on:click={toggleMenu}>☰</div>
 
   <!-- Links -->

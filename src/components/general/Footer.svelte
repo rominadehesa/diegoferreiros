@@ -95,7 +95,7 @@
         display: flex;
         justify-content: start;
         align-items: center;
-        gap: 2vw;
+        gap: 1vw;
     }
     @media (max-width: 768px) {
         footer {

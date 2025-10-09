@@ -3,6 +3,7 @@
 
     import { link, location } from 'svelte-spa-router';
     import HeroMain from '../components/general/HeroMain.svelte';
+    import Hero from '../components/general/Hero.svelte';
     import SectionMain from '../components/general/SectionMain.svelte';
     import SectionDark from '../components/general/SectionDark.svelte';
     import SectionImage from '../components/general/SectionImage.svelte';
@@ -10,15 +11,24 @@
     import Form from '../components/general/Form.svelte';
 
     import montajes from "/public/foto.jpg";
+    import grua from "/public/services/12.mp4";
 
     const texts = [
         {
             text: "Soluciones integrales en montajes industriales, adaptadas a las necesidades de cada proyecto. Desde grandes desarrollos hasta obras específicas, acompañamos a empresas e industrias en cada etapa."
         }
     ];
+
+    const galeria = [
+        { src: '/galeria/2.jpg'},
+        { src: '/galeria/10.jpg'},
+        { src: '/galeria/6.jpg'},
+        { src: '/galeria/9.jpg'},
+        { src: '/galeria/1.jpg'},
+    ];
 </script>
 
-<HeroMain/>
+<Hero></Hero>
 
 <section class="padding-container container-blue service">
     <img src="{montajes}" alt="Industrial workers">
@@ -42,7 +52,30 @@
     </div>
 </section>
 
+<section class="padding-container service">
+    <div>
+        <h1>Soporte y servicio <br> de grúa</h1>
+        <p>Brindamos servicio de grúa para montaje, traslado y elevación de estructuras. Operamos con seguridad y eficiencia, garantizando maniobras confiables en cada proyecto.</p>
+        <main>
+            <article>
+                <h4>Operadores especializados</h4>
+                <p>Personal capacitado para maniobras seguras y precisas.</p>
+            </article>
+            <article>
+                <h4>Equipos versátiles</h4>
+                <p>Grúas adaptadas a diferentes tipos de cargas y alturas.</p>
+            </article>
+            <article>
+                <h4>Soporte integral</h4>
+                <p>Asistencia en montaje, traslado y colocación de estructuras.</p>
+            </article>
+        </main>
+    </div>
+    <img src="{montajes}" alt="Industrial workers">
+</section>
+
 <section class="padding-container service container-light">
+    <img src="{montajes}" alt="Industrial workers">
     <div>
         <h1>Mantenimiento de obras</h1>
         <p>Ofrecemos mantenimiento preventivo y correctivo para obras propias o de terceros. Actuamos con rapidez para prolongar la vida útil de tus instalaciones y asegurar continuidad operativa.</p>
@@ -61,30 +94,9 @@
             </article>
         </main>
     </div>
-     <img src="{montajes}" alt="Industrial workers">
 </section>
 
-<section class="padding-container container-img service">
-   <div>
-        <h1>Soporte y servicio <br> de grúa</h1>
-        <p>Brindamos servicio de grúa para montaje, traslado y elevación de estructuras. Operamos con seguridad y eficiencia, garantizando maniobras confiables en cada proyecto.</p>
-        <main>
-            <article>
-                <h4>Operadores especializados</h4>
-                <p>Personal capacitado para maniobras seguras y precisas.</p>
-            </article>
-            <article>
-                <h4>Equipos versátiles</h4>
-                <p>Grúas adaptadas a diferentes tipos de cargas y alturas.</p>
-            </article>
-            <article>
-                <h4>Soporte integral</h4>
-                <p>Asistencia en montaje, traslado y colocación de estructuras.</p>
-            </article>
-        </main>
-    </div>
-    <img src="" alt="">
-</section>
+<Galeria images={galeria}></Galeria>
 
 <Form></Form>
 
@@ -120,8 +132,7 @@
         height: 15vh;
         padding: 2vh;
         border-radius: 12px;
-        background-color: #003450;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     }
     .service div main h4 {
         font-size: 14px;
@@ -137,22 +148,7 @@
     .container-light div main article {
         background-color: #fff;
     }
-    .container-img {
-        background-image: url('../../public/grua.png');
-        background-size: cover;
-        height: 70vh;
-        align-items: end;
-        color: #fff;
-    }
-    .container-img div main {
-        flex-wrap: nowrap;
-    }
-    .container-img > div {
-        width: 70%;
-    }
-    .container-img div main article {
-        width: 50%;
-    }
+
     @media (max-width: 768px) {
         .service {
             display: block;
@@ -173,9 +169,6 @@
             width: 90%;
             height: auto;
             margin-bottom: 2vh;
-        }
-        .container-img {
-            height: auto;
         }
     }
 </style>
