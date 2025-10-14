@@ -19,7 +19,7 @@
         <div class="social">
             <div>
                 <!-- svelte-ignore a11y_consider_explicit_label -->
-                <a href="">
+                <a href="https://api.whatsapp.com/send/?phone=5492983554828&text&type=phone_number&app_absent=0">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="none">
                         <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.3789 2.27907 14.6926 2.78382 15.8877C3.06278 16.5481 3.20226 16.8784 3.21953 17.128C3.2368 17.3776 3.16334 17.6521 3.01642 18.2012L2 22L5.79877 20.9836C6.34788 20.8367 6.62244 20.7632 6.87202 20.7805C7.12161 20.7977 7.45185 20.9372 8.11235 21.2162C9.30745 21.7209 10.6211 22 12 22Z" stroke="#F4F4F4" stroke-width="1.5" stroke-linejoin="round"></path>
                         <path d="M8.58815 12.3773L9.45909 11.2956C9.82616 10.8397 10.2799 10.4153 10.3155 9.80826C10.3244 9.65494 10.2166 8.96657 10.0008 7.58986C9.91601 7.04881 9.41086 7 8.97332 7C8.40314 7 8.11805 7 7.83495 7.12931C7.47714 7.29275 7.10979 7.75231 7.02917 8.13733C6.96539 8.44196 7.01279 8.65187 7.10759 9.07169C7.51023 10.8548 8.45481 12.6158 9.91948 14.0805C11.3842 15.5452 13.1452 16.4898 14.9283 16.8924C15.3481 16.9872 15.558 17.0346 15.8627 16.9708C16.2477 16.8902 16.7072 16.5229 16.8707 16.165C17 15.8819 17 15.5969 17 15.0267C17 14.5891 16.9512 14.084 16.4101 13.9992C15.0334 13.7834 14.3451 13.6756 14.1917 13.6845C13.5847 13.7201 13.1603 14.1738 12.7044 14.5409L11.6227 15.4118" stroke="#F4F4F4" stroke-width="1.5"></path>
@@ -52,14 +52,15 @@
         <ul>
             <li><a href="/">Inicio</a></li>
             <li><a href="/home#sobrenosotros">Nuestra historia</a></li>
-            <li><a href="#/servicios">Servicios</a></li>
-            <li><a href="#/contacto">Clientes</a></li>
+            <li><a href="/#/servicios">Servicios</a></li>
+            <li><a href="javascript:void(0)" on:click={goToForm}>Contacto</a></li>
         </ul>
 
         <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Email</a></li>
-            <li><a href="">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/drf.montajes.industriales/">Instagram</a></li>
+            <!-- svelte-ignore a11y_invalid_attribute -->
+            <li><a href="javascript:void(0)" on:click={goToForm}>Email</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5492983554828&text&type=phone_number&app_absent=0">WhatsApp</a></li>
         </ul>
     </div>
 </footer>
