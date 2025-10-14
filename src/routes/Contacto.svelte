@@ -13,7 +13,7 @@
     ];
 </script>
 
-<Hero></Hero>
+<Hero title="Contacto"></Hero>
 
 <section class="container-blue padding-container" id="maps">
     <!-- svelte-ignore a11y_missing_attribute -->

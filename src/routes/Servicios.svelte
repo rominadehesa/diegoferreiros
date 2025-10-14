@@ -29,7 +29,7 @@
     ];
 </script>
 
-<Hero></Hero>
+<Hero title={"Soluciones Integrales"}></Hero>
 
 <section class="padding-container container-blue service" id="montajes">
     <img src="{serv1}" alt="Industrial workers">
