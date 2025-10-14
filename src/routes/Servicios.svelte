@@ -10,9 +10,10 @@
     import Galeria from '../components/general/Galeria.svelte';
     import Form from '../components/general/Form.svelte';
 
-    import montajes from "/public/foto.jpg";
-    import grua from "/public/services/12.mp4";
-
+    import serv1 from "/public/galeria/4.jpg";
+    import serv2 from "/public/galeria/12.jpg";
+    import serv3 from "/public/galeria/9.jpg";
+    
     const texts = [
         {
             text: "Soluciones integrales en montajes industriales, adaptadas a las necesidades de cada proyecto. Desde grandes desarrollos hasta obras específicas, acompañamos a empresas e industrias en cada etapa."
@@ -30,8 +31,8 @@
 
 <Hero></Hero>
 
-<section class="padding-container container-blue service">
-    <img src="{montajes}" alt="Industrial workers">
+<section class="padding-container container-blue service" id="montajes">
+    <img src="{serv1}" alt="Industrial workers">
     <div>
         <h1>Montajes industriales <br> a tu medida</h1>
         <p>Nos dedicamos al montaje de galpones, silos, norias y estructuras metálicas. Acompañamos cada proyecto con seguridad, eficiencia y cumplimiento de plazos, garantizando resultados sólidos y duraderos.</p>
@@ -71,11 +72,11 @@
             </article>
         </main>
     </div>
-    <img src="{montajes}" alt="Industrial workers">
+    <img src="{serv3}" alt="Industrial workers">
 </section>
 
 <section class="padding-container service container-light">
-    <img src="{montajes}" alt="Industrial workers">
+    <img src="{serv2}" alt="Industrial workers">
     <div>
         <h1>Mantenimiento de obras</h1>
         <p>Ofrecemos mantenimiento preventivo y correctivo para obras propias o de terceros. Actuamos con rapidez para prolongar la vida útil de tus instalaciones y asegurar continuidad operativa.</p>
@@ -114,7 +115,7 @@
         color: var(--blue-color);
     }
     .service > img {
-        width: 45%;
+        width: 40%;
         border-radius: 12px;
     }
     .service > div {

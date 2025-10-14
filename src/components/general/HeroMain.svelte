@@ -57,7 +57,7 @@
     }
 
     .hero-content img {
-        width: 50vw;
+        width: 40vw;
         height: auto;
     }
 

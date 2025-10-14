@@ -40,7 +40,7 @@
         background-image: url('../../../public/retggsdfsd.jpeg');
         background-size: cover;
         width: 30vw;
-        height: 50vh;
+        height: 75vh;
         border-radius: 10px;
     }
 

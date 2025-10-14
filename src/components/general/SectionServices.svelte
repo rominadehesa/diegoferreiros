@@ -1,14 +1,14 @@
 <script>
 </script>
 
-<section class="padding-container">
+<section class="padding-container container-light">
     <h1>
-        Lo que ofrecemos
+        Soluciones integrales en montajes industriales
     </h1>
-    <p>Soluciones integrales en montajes industriales, adaptadas a las necesidades de cada proyecto. <br> Desde grandes desarrollos hasta obras específicas, acompañamos a empresas e industrias en cada etapa.</p>
+    <br><br>
     <main>
         <article>
-            <header>
+            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../../../public/galeria/4.jpg'); background-size: cover; background-position: center;">
 
             </header>
             <main>
@@ -16,12 +16,12 @@
                 <p>Soluciones integrales en estructuras metálicas y montajes industriales. Acompañamos cada proyecto con eficiencia, seguridad y cumplimiento.</p>
                 <br>
                 <div class="btn-vermas">
-                    <a href="/">Ver más</a>
+                    <a href="#/servicios/">Ver más</a>
                 </div>
             </main>
         </article>
         <article>
-            <header>
+            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../../../public/galeria/9.jpg'); background-size: cover; background-position: center;">
 
             </header>
             <main>
@@ -29,12 +29,12 @@
                 <p>Cuidamos tus instalaciones con mantenimiento preventivo y correctivo. Prolongamos la vida útil de tus estructuras y aseguramos continuidad operativa.</p>
                 <br>
                 <div class="btn-vermas">
-                    <a href="/">Ver más</a>
+                    <a href="#/servicios/">Ver más</a>
                 </div>
             </main>
         </article>
         <article>
-            <header>
+            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../../../public/galeria/12.jpg'); background-size: cover; background-position: center;">
 
             </header>
             <main>
@@ -42,7 +42,7 @@
                 <p>Brindamos soporte de grúa para montaje, traslado y elevación de estructuras. Operamos con precisión y seguridad en cada maniobra.</p>
                 <br>
                 <div class="btn-vermas">
-                    <a href="/">Ver más</a>
+                    <a href="#/servicios/">Ver más</a>
                 </div>
             </main>
         </article>
@@ -63,16 +63,14 @@
     section > main article {
         background-color: #fff;
         border-radius: 14px;
-        width: 33%;
+        width: 32%;
         box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
     }
 
     section > main article header {
-        height: 20vh;
+        height: 30vh;
         width: 100%;
-        background-image: url('../../../public/services/1.png');
         background-size: cover;
-        background-position: center;
         border-top-right-radius: 14px;
         border-top-left-radius: 14px;
     }
@@ -96,7 +94,7 @@
     h1 {
         font-size: 34px;
         font-weight: 800;
-        color: var(--blue-color);
+        color: var(--dark-color);
     }
     p {
         font-size: 16px;
