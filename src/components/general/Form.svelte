@@ -2,7 +2,7 @@
 
 </script>
 
-<section class="padding-container">
+<section class="padding-container" id="form">
     <div>
         <h1>Somos el aliado en tus proyectos industriales</h1>
         <p>Estamos listos para acompañarte con servicio de grúas, montaje de naves y mantenimiento especializado. Experiencia y compromiso en cada obra.</p>

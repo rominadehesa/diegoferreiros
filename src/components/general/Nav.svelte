@@ -73,8 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
   <!-- Links -->
   <ul id="menu-list">
     <li><a href="/">Inicio</a></li>
-    <li><a href="/#/servicios">Nuestros servicios</a></li>
-    <li><a href="/#/contacto">Sobre nosotros</a></li>
+    <li><a href="/#/servicios">Soluciones Integrales</a></li>
+    <li><a href="/home#sobrenosotros">Sobre nosotros</a></li>
+    <li><a href="#galeria">Galeria</a></li>
   </ul>
 </nav>
 

@@ -53,7 +53,7 @@
     </div>
 </section>
 
-<section class="padding-container service">
+<section class="padding-container service" id="grua">
     <div>
         <h1>Soporte y servicio <br> de grúa</h1>
         <p>Brindamos servicio de grúa para montaje, traslado y elevación de estructuras. Operamos con seguridad y eficiencia, garantizando maniobras confiables en cada proyecto.</p>
@@ -75,7 +75,7 @@
     <img src="{serv3}" alt="Industrial workers">
 </section>
 
-<section class="padding-container service container-light">
+<section class="padding-container service container-light" id="mantenimiento">
     <img src="{serv2}" alt="Industrial workers">
     <div>
         <h1>Mantenimiento de obras</h1>

@@ -15,7 +15,7 @@
 
 <Hero></Hero>
 
-<section class="container-blue padding-container">
+<section class="container-blue padding-container" id="maps">
     <!-- svelte-ignore a11y_missing_attribute -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45294.43823622183!2d-60.326153768847895!3d-38.36636149353839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95926dac16830a99%3A0x580d8b216f434c9e!2sTres%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1759333677336!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="div-info">

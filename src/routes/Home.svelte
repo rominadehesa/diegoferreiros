@@ -7,6 +7,8 @@
     import Galeria from '../components/general/Galeria.svelte';
     import Form from '../components/general/Form.svelte';
 
+    import { push } from 'svelte-spa-router';
+
     const galeria = [
         { src: '/galeria/2.jpg'},
         { src: '/galeria/3.jpg'},
@@ -14,6 +16,14 @@
         { src: '/galeria/4.jpg'},
         { src: '/galeria/8.jpg'},
     ];
+
+    function goToContacto() {
+        push('/contacto'); // navega a la ruta
+        setTimeout(() => {
+            const el = document.getElementById('maps');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 400); // espera a que se monte la vista
+    }
 </script>
 
 <HeroMain title="MONTAJES INDUSTRIALES"></HeroMain>
@@ -46,7 +56,7 @@
 
 <Galeria images={galeria}></Galeria>
 
-<section class="padding-container container-about">
+<section class="padding-container container-about" id="sobrenosotros">
     <div class="text-about">
         <h1>Sobre nosotros y nuestra trayectoria</h1>
         <br>
@@ -54,7 +64,10 @@
            <br><br> 
             En la última etapa incorporamos el servicio de grúa, disponible tanto para nuestras obras como para clientes externos. Hoy seguimos creciendo con el mismo objetivo que nos guía desde el inicio: brindar un servicio de calidad, con compromiso y confianza en cada proyecto, trabajando en obras locales, provinciales y también en el sur de nuestro país.</p>
         <br>
-        <button id="btnMainRed">Donde encontrarnos</button>
+        <!-- svelte-ignore a11y_invalid_attribute -->
+        <a href="javascript:void(0)" on:click={goToContacto}>
+            <button id="btnMainRed">Donde encontrarnos</button>
+        </a>
     </div>
 </section>
 

@@ -1,4 +1,35 @@
 <script>
+    import IMG1 from '../../../public/galeria/4.jpg';
+    import IMG2 from '../../../public/galeria/9.jpg';
+    import IMG3 from '../../../public/galeria/12.jpg';
+
+    import { push } from 'svelte-spa-router';
+
+    function goToService1() {
+        push('/servicios'); // navega a la ruta
+        setTimeout(() => {
+            const el = document.getElementById('montajes');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 400); // espera a que se monte la vista
+    }
+
+    function goToService2() {
+        push('/servicios'); // navega a la ruta
+        setTimeout(() => {
+            const el = document.getElementById('grua');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 400); // espera a que se monte la vista
+    }
+
+    function goToServiceMaintenance() {
+        push('/servicios'); // navega a la ruta
+        setTimeout(() => {
+            const el = document.getElementById('manteminiento');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 400); // espera a que se monte la vista
+    }
+
+
 </script>
 
 <section class="padding-container container-light">
@@ -8,7 +39,7 @@
     <br><br>
     <main>
         <article>
-            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../../../public/galeria/4.jpg'); background-size: cover; background-position: center;">
+            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url({IMG1}); background-size: cover; background-position: center;">
 
             </header>
             <main>
@@ -16,12 +47,14 @@
                 <p>Soluciones integrales en estructuras metálicas y montajes industriales. Acompañamos cada proyecto con eficiencia, seguridad y cumplimiento.</p>
                 <br>
                 <div class="btn-vermas">
-                    <a href="#/servicios/">Ver más</a>
+                    <!-- svelte-ignore a11y_invalid_attribute -->
+                    <a href="javascript:void(0)" on:click={goToService1}>Ver más</a>
                 </div>
             </main>
         </article>
+
         <article>
-            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../../../public/galeria/9.jpg'); background-size: cover; background-position: center;">
+            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url({IMG2}); background-size: cover; background-position: center;">
 
             </header>
             <main>
@@ -29,20 +62,21 @@
                 <p>Cuidamos tus instalaciones con mantenimiento preventivo y correctivo. Prolongamos la vida útil de tus estructuras y aseguramos continuidad operativa.</p>
                 <br>
                 <div class="btn-vermas">
-                    <a href="#/servicios/">Ver más</a>
+                     <!-- svelte-ignore a11y_invalid_attribute -->
+                     <a href="javascript:void(0)" on:click={goToServiceMaintenance}>Ver más</a>
                 </div>
             </main>
         </article>
         <article>
-            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../../../public/galeria/12.jpg'); background-size: cover; background-position: center;">
-
+            <header style="background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url({IMG3}); background-size: cover; background-position: center;">
             </header>
             <main>
                 <h3>Servicio <br> de grúa</h3>
                 <p>Brindamos soporte de grúa para montaje, traslado y elevación de estructuras. Operamos con precisión y seguridad en cada maniobra.</p>
                 <br>
                 <div class="btn-vermas">
-                    <a href="#/servicios/">Ver más</a>
+                    <!-- svelte-ignore a11y_invalid_attribute -->
+                    <a href="javascript:void(0)" on:click={goToService2}>Ver más</a>
                 </div>
             </main>
         </article>

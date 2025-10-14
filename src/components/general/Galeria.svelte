@@ -2,13 +2,18 @@
     export let images;
 </script>
 
-<section class="padding-container">
-    <h1>Galeria</h1>
-    <br>
+<section class="padding-container" id="galeria">
+    <h1>Conoce algunos de nuestros trabajos</h1>
+    <br><br>
     <main>
         {#each images as item}
              <!-- content here -->
-             <article style="background-image: url({item.src});"></article>
+             <article style="background-image: url({item.src});">
+                <!--div>
+                    <h5>Proyecto XXXXX</h5>
+                    <p>dsds</p>
+                </div-->
+             </article>
         {/each}
     </main>
 </section>
@@ -42,6 +47,34 @@
         width: 30vw;
         height: 75vh;
         border-radius: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+    }
+    section main article div {
+        background-color: var(--light-color);
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 5vh;
+    }
+
+    section main article div h5 {
+        font-size: 16px;
+        list-style: 18px;
+        font-weight: 800;
+        color: var(--red-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    section main article div p {
+        font-size: 14px;
+        list-style: 15px;
+        font-weight: 300;
+        color: var(--dark-color);
+        margin: 0;
+        padding: 0;
     }
 
     @media (max-width: 768px) {
