@@ -158,5 +158,9 @@
             width: 100%;
             margin-bottom: 4vh;
         }
+
+        h1 {
+            font-size: 26px;
+        }
     }
 </style>

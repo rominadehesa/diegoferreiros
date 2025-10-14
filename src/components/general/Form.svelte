@@ -70,7 +70,7 @@
             width: 100%;
         }
         h1 {
-            font-size: 28px;
+            font-size: 26px;
         }
     }
 </style>

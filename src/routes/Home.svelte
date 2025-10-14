@@ -148,5 +148,9 @@
         .container-about .text-about {
             width: 100%;
         }
+
+        h1 {
+            font-size: 26px;
+        }
     }
 </style>

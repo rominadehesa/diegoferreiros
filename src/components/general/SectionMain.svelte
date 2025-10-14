@@ -72,7 +72,7 @@
     /* Desktop */
     @media (min-width: 769px) {
         h1 {
-            font-size: 34px;
+            font-size: 28px;
         }
     }
 </style>

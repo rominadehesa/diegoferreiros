@@ -79,7 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
   <!-- Botón hamburguesa -->
   <!-- svelte-ignore a11y_click_events_have_key_events -->
   <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="menu-mobile" id="btnMenuHamb" on:click={toggleMenu}>☰</div>
+  <div class="menu-mobile" id="btnMenuHamb" on:click={toggleMenu}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+        <path d="M4 4.5L20 4.5" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M4 14.5L20 14.5" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M4 9.5L20 9.5" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M4 19.5L20 19.5" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
 
   <!-- Links -->
   <ul id="menu-list">

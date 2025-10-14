@@ -171,5 +171,21 @@
             height: auto;
             margin-bottom: 2vh;
         }
+
+        .service h1 {
+            font-size: 24px;
+        }
+
+        .service div main h4 {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--red-color);
+        }
+        .service div main p {
+            font-size: 16px;
+            line-height: 18px;
+            margin-top: 1vh;
+            margin-bottom: 2vh;
+        }
     }
 </style>
