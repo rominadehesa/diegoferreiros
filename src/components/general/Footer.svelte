@@ -53,6 +53,7 @@
             <li><a href="/">Inicio</a></li>
             <li><a href="/home#sobrenosotros">Nuestra historia</a></li>
             <li><a href="/#/servicios">Servicios</a></li>
+            <!-- svelte-ignore a11y_invalid_attribute -->
             <li><a href="javascript:void(0)" on:click={goToForm}>Contacto</a></li>
         </ul>
 
@@ -94,9 +95,6 @@
         margin: 0;
         margin-top: 5px;
     }
-    footer .svg {
-        width: 250px;
-    }
     .social {
         display: flex;
         justify-content: start;
@@ -121,9 +119,6 @@
         }
         footer .social {
             margin-bottom: 3vh;
-        }
-        footer .svg {
-            width: 150px;
         }
     }
 </style>
