@@ -1,30 +1,56 @@
 <script>
+  import emailjs from 'emailjs-com';
+
+  export function enviarFormulario(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_irf3ru5",
+    "template_vk21v3v",
+    e.target, // el formulario
+    "PBtdMVdICpk5SFjnj" // reemplaza con tu Public Key
+  )
+  .then((result) => {
+    alert("Mensaje enviado correctamente ✅");
+    e.target.reset();
+  })
+  .catch((error) => {
+    alert("Error al enviar ❌");
+    console.error(error);
+  });
+}
 
 </script>
 
+<!-- FORMULARIO HTML -->
 <section class="padding-container" id="form">
+  <div>
+    <h1>Somos el aliado en tus proyectos industriales</h1>
+    <p>Estamos listos para acompañarte con servicio de grúas, montaje de naves y mantenimiento especializado. Experiencia y compromiso en cada obra.</p>
+  </div>
+
+  <form id="contact-form" onsubmit={enviarFormulario}>
     <div>
-        <h1>Somos el aliado en tus proyectos industriales</h1>
-        <p>Estamos listos para acompañarte con servicio de grúas, montaje de naves y mantenimiento especializado. Experiencia y compromiso en cada obra.</p>
+      <input type="text" name="name" placeholder="Nombre completo" required>
     </div>
-    <form action="">
-        <div>
-            <input type="text" placeholder="Nombre completo" required>
-        </div>
-        <div>
-            <input type="text" placeholder="Celular" required>
-        </div>
-        <div>
-            <input type="text" placeholder="Asunto" required>
-        </div>
-        <div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu consulta aquí" required></textarea>
-        </div>
-        <div>
-            <button id="btnMainRed">Enviar</button>
-        </div>
-    </form>
+    <div>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+    </div>
+    <div>
+      <input type="text" name="phone" placeholder="Celular" required>
+    </div>
+    <div>
+      <input type="text" name="subject" placeholder="Asunto" required>
+    </div>
+    <div>
+      <textarea name="msj" cols="30" rows="10" placeholder="Escribe tu consulta aquí" required></textarea>
+    </div>
+    <div>
+      <button type="submit" id="btnMainRed">Enviar</button>
+    </div>
+  </form>
 </section>
+
 
 <style>
     section {
