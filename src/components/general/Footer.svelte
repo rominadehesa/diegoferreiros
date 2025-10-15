@@ -65,6 +65,9 @@
         </ul>
     </div>
 </footer>
+<div id="fter-ig">
+    <a href="https://www.instagram.com/alejandradellagogna/">Desarrollado por: Alejandra Dellagogna</a>
+</div>
 
 <style>
     footer {
@@ -100,6 +103,21 @@
         justify-content: start;
         align-items: center;
         gap: 1vw;
+    }
+
+    #fter-ig {
+        background-color: var(--blue-color);
+        text-align: center;
+        padding: 4vh;
+    }
+    #fter-ig a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    #fter-ig a:hover {
+        font-weight: 600;
     }
     @media (max-width: 768px) {
         footer {
