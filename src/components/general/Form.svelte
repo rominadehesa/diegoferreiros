@@ -12,6 +12,9 @@
             <input type="text" placeholder="Nombre completo" required>
         </div>
         <div>
+            <input type="text" placeholder="Celular" required>
+        </div>
+        <div>
             <input type="text" placeholder="Asunto" required>
         </div>
         <div>
