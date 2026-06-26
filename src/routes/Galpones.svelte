@@ -296,7 +296,7 @@
      }
     #galeria main article {
                 width: 80vw;
-        height: 46vh;
+        height: 50vh;
     }
     }
 </style>
