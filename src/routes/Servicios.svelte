@@ -97,6 +97,8 @@
     </div>
 </section>
 
+
+
 <Galeria images={galeria}></Galeria>
 
 <Form></Form>

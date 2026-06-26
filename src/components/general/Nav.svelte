@@ -199,6 +199,7 @@
   <ul id="menu-list">
     <li><a href="/">Inicio</a></li>
     <li><a href="/#/servicios">Soluciones Integrales</a></li>
+    <li><a href="/#/galpones">Nuestras naves</a></li>
     <li><a href="/home#sobrenosotros">Sobre nosotros</a></li>
     <li><a href="/#/contacto">Contacto</a></li>
     <li>

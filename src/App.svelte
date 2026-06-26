@@ -6,9 +6,11 @@
     // @ts-ignore
     import Servicios from './routes/Servicios.svelte';
     import Contacto from './routes/Contacto.svelte';
+    import Galpones from './routes/Galpones.svelte';
     
     const routes = {
       '/': Home,
+      '/galpones' : Galpones,
       '/servicios': Servicios,
       '/contacto': Contacto
     }
