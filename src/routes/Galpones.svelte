@@ -24,7 +24,7 @@
     ];
 </script>
 
-<Hero title={"Galpones, tinglados o naves industriales"}></Hero>
+<Hero title={"Galpones Tinglados Naves Industriales"}></Hero>
 
 <section class="padding-container div-galpones">
     <div>
